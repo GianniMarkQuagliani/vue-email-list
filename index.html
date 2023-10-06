@@ -23,13 +23,13 @@
 
     <!-- App -->
     <div id="app">
-        <div class="container d-flex flex-column align-items-center list-unstyled pt-5 debug">
+        <div class="container d-flex flex-column align-items-center list-unstyled pt-5">
             <!-- Titolo -->
             <h1 class="text-uppercase ">Random mail generator</h1>
             <!-- Bottone -->
             <button class="btn btn-outline-warning mb-5" @click="getData">Generate</button>
             <!-- Lista Email -->
-            <ul>
+            <ul v-if="randomMail.length === 10">
                 <li class="list-unstyled fs-4 py-2" v-for="mail in randomMail">{{mail}}</li>
             </ul>
 

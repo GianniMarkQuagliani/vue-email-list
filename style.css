@@ -5,3 +5,8 @@ body {
 .debug{
     border: 10px solid black;
 }
+
+li {
+    color: white;
+}
+  
